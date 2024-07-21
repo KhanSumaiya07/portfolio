@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:8rem;
+    position: relative;
+}
+.bg-hero-banner{
+    position: relative;
+}
+.bg-image-circle{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    background: red;
+    background-image: url('/public/img/hijab\ girl\ with\ destkop.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 100;
+}
+.img-overlay{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.600);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg-blur-blue{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: #0C15C4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(100px);
+    z-index: 1;
+}
+
+.home-content{
+    width: 60%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: green; */
+    z-index: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.home-content h1{
+    font-size: 3.8rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.1;
+}
+ mark{
+    background: none;
+    color: #ddff37;
+    font-weight: 400;
+}
+.heading{
+    padding-bottom: 8rem;
+    text-align: center;
+}
+h2{
+    color: #fff;
+    font-size: 3rem;
+}
+p{
+    font-size: 1.4rem;
+    color: #fff;
+    /* margin-top: 1rem; */
+}
+
+.sec-padding{
+    padding: 80px 100px;
+}
+.flex{
+    display: flex;
+}
+.main-wrapper{
+    /* display: flex; */
+    background:#181818;
+    position: relative;
+    z-index: 200;
+    margin-top:-100px ;
+}
+
+.left{
+    width: 40%;
+    /* background: green; */
+}
+.img-container{
+    height: 400px;
+    width: 300px;
+    background: red;
+    background-image: url('/public/img/sumaiya.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.right{
+    width: 60%;
+    color: #fff;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+h3{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.Skills-container{
+    background: green;
+}
+.skills-box{
+    height: 300px;
+    width: 400px;
+    background: gray;
+}
