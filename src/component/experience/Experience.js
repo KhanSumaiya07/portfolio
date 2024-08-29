@@ -5,7 +5,7 @@ import JobInfoContainer from "./JobContainer";
 const Experience = () => {
   
   return (
-    <div>
+    <div id="experience">
       <div className="experience-section sec-padding">
         <div className="heading">
           <h2>

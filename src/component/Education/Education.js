@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <div>
+    <div id="education">
       <div class="education-section sec-padding">
         <div class="heading">
           <h2>

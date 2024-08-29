@@ -3,7 +3,7 @@ import Button from "../button/button";
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <div class="contact-form-container sec-padding">
       <div class="heading">
           <h2>

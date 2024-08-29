@@ -5,13 +5,16 @@
 }
 
 .home-container{
+    background-color: #181818;
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top:20rem;
-    position: relative;
+    padding-top:18rem;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .bg-hero-banner{
     position: relative;
@@ -85,11 +88,83 @@ h2{
     color: #fff;
     font-size: 3rem;
 }
+h3{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+h5{
+    font-size:1.6rem;
+    color: #ddff37;
+    font-weight: 600;
+}
+h6{
+    font-size: 1.1rem;
+}
 p{
     font-size: 1.125rem;
     color: #fff;
     /* margin-top: 1rem; */
 }
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (max-width: 780px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 1rem !important;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Small Devices (Phones, 480px and up) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
 
 .sec-padding{
     padding: 80px 100px;
@@ -131,10 +206,10 @@ p{
     flex-direction: column;
     gap: 1.5rem;
 }
-h3{
-    font-size: 2.4rem;
-    font-weight: 600;
+.about-content p{
+    transition: all .3s ease-in-out;
 }
+
 
 .Skills-container{
     /* background: green; */
@@ -146,8 +221,8 @@ h3{
     justify-content: center;
 }
 .skills-box{
-    /* height: 300px; */
-    width: 48%;
+    height: 500px;
+    /* width: 48%; */
     background: #26272a;
     border: 1px solid rgb(242 242 242 / 30%);
     border-radius: 20px;
@@ -170,11 +245,7 @@ h3{
 .path-yellow {
     color:#ddff37;
 }
-h4{
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.4;
-}
+
 .skill-wrapper{
     display: flex;
     gap: 10px;
@@ -214,12 +285,29 @@ h4{
     background: #26272A;
     border: 2px solid #f2f2f21b;
     border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex-wrap: wrap;
     transition: all .3s ease-in-out;
 }
+
+@media screen and (max-width: 800px){
+    .project-box{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+    }
+    .about-project-left{
+        width: 50%;
+    }
+    .about-project-right{
+        width: 50%;
+    }
+    .project-box .img-container{
+        height: 244px !important;
+    }
+    .tech-stack span {
+        font-size: 0.9rem;
+    }
+}
+
 .project-box:hover {
     border:1px solid #0c15c4; /* Border color on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Enhanced box shadow on hover */
@@ -232,17 +320,14 @@ h4{
     background: rebeccapurple;
     border-radius: 20px;
 }
-h5{
-    font-size:1.6rem;
-    color: #ddff37;
-    font-weight: 600;
-}
+
 
 .tech-stack{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    margin-top: 1rem;
 }
 .tech-stack span{
     font-size: 1rem;
@@ -313,9 +398,7 @@ h5{
     font-size: 1.5rem;
 }
 
-h6{
-    font-size: 1.1rem;
-}
+
 .jobInfo-container p{
     opacity: 0.7;
 }
@@ -423,7 +506,7 @@ h6{
 
   /* Footer.css */
 .footer-container {
-    background: linear-gradient(to bottom, #0C15C4 0%, rgba(0, 0, 0, 0.2)) 100%;
+    background: linear-gradient(to bottom, #0C15C4 0%, rgba(0, 0, 0, 1)) 100%;
     color: #EFE8E1;
     padding: 20px 0;
     font-size: 14px;
@@ -518,9 +601,46 @@ h6{
     flex-direction: column;
 }
 .skills-box{
+    height: 400px;
     width: 90%;
 }
 
   }
 
+  /* Subheading styles */
+.subheading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 15px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* padding-bottom: 5px; */
+    transition: all 0.3s ease;
+  }
+  
+  .subheading span:first-child {
+    position: relative;
+  }
+  
+  .subheading::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #0c15c4; /* Blue bottom line */
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .subheading span:last-child {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
   
