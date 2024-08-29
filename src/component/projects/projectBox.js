@@ -6,7 +6,7 @@ const ProjectBox = ({ projImg, projName, projType, projPara }) => {
     <div className="project-box">
       <div className="about-project-left">
         <div className="img-container">
-          <img src="{projImg}" />
+          <img src={projImg} />
         </div>
       </div>
       <div className="about-project-right">

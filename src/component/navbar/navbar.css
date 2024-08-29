@@ -17,6 +17,15 @@ a {
     right: 0;
     z-index: 2000; 
 }
+.nav-wrapper .logo{
+  height: 50px;
+  width: 50px;
+}
+.nav-wrapper .logo img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .nav-content{
     display: flex;
     position: fixed;
@@ -193,4 +202,10 @@ transition:all 0.3s ease;
         text-decoration: none;
       }
     
+  }
+  @media (max-width: 500px) {
+    .nav-wrapper{
+    padding: 1rem 2rem;
+
+    }
   }
