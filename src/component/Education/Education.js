@@ -4,16 +4,6 @@ import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
 const Education = () => {
- 
- let container = document.querySelector(".educ-container")
- let width = container.clientWidth;
- console.log(width)
-  const PrevMove = () =>{
-    
-  }
-  const NextMove = () =>{
-    
-  }
   
   return (
     <div id="education">
@@ -24,10 +14,10 @@ const Education = () => {
           </h2>
         </div>
         <div className="edu-prev-next-btn">
-          <button className="prev-btn" onClick={PrevMove}>
+          <button className="prev-btn" >
             <FaArrowLeft />
           </button>
-          <div className="next-btn" onClick={NextMove}>
+          <div className="next-btn">
             <FaArrowRight />
           </div>
         </div>
