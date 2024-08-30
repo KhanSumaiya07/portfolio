@@ -312,6 +312,7 @@ p{
     width: 100%;
 }
 .project-box{
+    height: 550px;
    width: 325px;
     padding: 15px;
     background: #26272A;
@@ -478,9 +479,10 @@ p{
     align-items: end;
     justify-content: end;
     gap: 1rem;
+    /* cursor: pointer; */
 }
 
-.prev-btn,.next-btn{
+.prev-btn, .next-btn{
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
@@ -490,16 +492,22 @@ display: flex;
 align-items: center;
 justify-content: center;
 color: #fff;
+cursor: pointer;
 }
 
 .educ-container{
     padding-top: 2rem;
     display: flex;
     gap: 1.5rem;
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
 }
-
+/* .educ-container .sliding-content{
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: scroll;
+} */
 .edu-box{
     padding: 1rem;
     background-color: #26272A;
@@ -731,5 +739,8 @@ h6{
     font-size: 1.5rem;
     color: white;
   }
-  
+
+.subheading li{
+    margin-bottom: 1rem;
+}
   

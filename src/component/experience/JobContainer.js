@@ -1,13 +1,13 @@
 import React from 'react'
 
-const JobInfoContainer = () => {
+const JobInfoContainer = ({profile, ComName, position, duration}) => {
   return (
     <div>
       <div className='jobInfo-container'>
-        <h4>Frontend Development</h4>
-        <h5>Sheriyans Coding School</h5>
-        <h6>Training</h6>
-        <p>Aug 2023 - jan 2024</p>
+        <h4>{profile}</h4>
+        <h5>{ComName}</h5>
+        <h6>{position}</h6>
+        <p>{duration}</p>
       </div>
     </div>
   )

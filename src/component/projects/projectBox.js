@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectBox = ({ projImg, projName, projType, projPara }) => {
+const ProjectBox = ({ projImg, projName, projType, projPara, techStack =[] }) => {
   console.log(projImg);
   return (
     <div className="project-box">
@@ -11,10 +11,9 @@ const ProjectBox = ({ projImg, projName, projType, projPara }) => {
       </div>
       <div className="about-project-right">
         <div className="tech-stack">
-          <span>Wireframing</span>
-          <span>Prototyping</span>
-          <span>Plugins</span>
-          <span>Plugins</span>
+        {techStack.map((tech, index) => (
+            <span key={index}>{tech}</span>
+          ))}
         </div>
 
         <div className="proj-name">

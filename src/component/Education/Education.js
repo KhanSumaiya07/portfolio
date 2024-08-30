@@ -1,9 +1,20 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import EducationBox from "./EducationBox";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
 const Education = () => {
+ 
+ let container = document.querySelector(".educ-container")
+ let width = container.clientWidth;
+ console.log(width)
+  const PrevMove = () =>{
+    
+  }
+  const NextMove = () =>{
+    
+  }
+  
   return (
     <div id="education">
       <div class="education-section sec-padding">
@@ -13,14 +24,14 @@ const Education = () => {
           </h2>
         </div>
         <div className="edu-prev-next-btn">
-          <div className="prev-btn">
+          <button className="prev-btn" onClick={PrevMove}>
             <FaArrowLeft />
-          </div>
-          <div className="next-btn">
+          </button>
+          <div className="next-btn" onClick={NextMove}>
             <FaArrowRight />
           </div>
         </div>
-        <div class="educ-container">
+        <div class="educ-container" >
           <EducationBox
             eduLogo={
               "https://images.collegedunia.com/public/college_data/images/logos/1631612123Screenshot20210914145635.png"
@@ -30,7 +41,7 @@ const Education = () => {
             Duration={"Aug 2023 - Present"}
             Grade={"Grade: 7.5 CGPA"}
             DegPara={
-              "Lorem ipsum dolor sit amet consectetur. Nam potenti aliquet amet pellentesque enim. Scelerisque in risus elementum accumsan elementum etiam sagittis. Ut eleifend consequat condimentum malesuada eget viverra."
+              "Currently pursuing my Master of Technology at TIT College, where I am deepening my knowledge in advanced technical concepts and innovative practices. This program is refining my expertise in software development and design, preparing me to tackle complex challenges in the tech industry."
             }
           />
 
@@ -43,7 +54,7 @@ const Education = () => {
             Duration={"Aug 2019 - May 2023"}
             Grade={"Grade: 8.1 CGPA"}
             DegPara={
-              "Lorem ipsum dolor sit amet consectetur. Nam potenti aliquet amet pellentesque enim. Scelerisque in risus elementum accumsan elementum etiam sagittis. Ut eleifend consequat condimentum malesuada eget viverra."
+              "Graduated with a Bachelor of Technology from NRI Institute of Technology. Here, I built a solid foundation in computer science and engineering, honing my skills in coding, problem-solving, and design. My time at NRI laid the groundwork for my passion for frontend development and UI/UX design."
             }
           />
 
@@ -56,7 +67,7 @@ const Education = () => {
             Duration={"July 2017 - April 2019"}
             Grade={"Grade: 79%"}
             DegPara={
-              "Lorem ipsum dolor sit amet consectetur. Nam potenti aliquet amet pellentesque enim. Scelerisque in risus elementum accumsan elementum etiam sagittis. Ut eleifend consequat condimentum malesuada eget viverra."
+              "Completed my Senior Secondary Education at Darshgah Iqra School, where I developed a strong analytical mindset and a love for learning. My time here instilled in me the discipline and curiosity that drives my continuous pursuit of knowledge and technical excellence."
             }
           />
         </div>

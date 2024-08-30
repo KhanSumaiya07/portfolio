@@ -17,12 +17,14 @@ const Project = () => {
                     projName={'Beauty & Personal Care Mobile App'}
                     projType={'UI/UX Design'}
                     projPara={'This mobile app enhances the beauty and personal care experience with an intuitive interface.'}
+                    techStack={["Wireframing", "Prototyping", "User Research", "Visual Design"]}
                     />
                     <ProjectBox
                     projImg={projects}
                     projName={'Anncode Website Development'}
                     projType={'Frontend Development'}
                     projPara={'I created a responsive website for Anncode, focusing on clean design, smooth navigation, and an engaging user experience.'}
+                    techStack={["JavaScript", "CSS", "HTML"]}
                     />
                     <ProjectBox
                     projName={'E-Commerce Website Dashboard'}
