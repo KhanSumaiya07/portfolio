@@ -1,27 +1,43 @@
-import React, {useRef, useEffect} from "react";
+import React, { useRef, useEffect } from "react";
 import EducationBox from "./EducationBox";
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Education = () => {
-  
+  const containerRef = useRef(null);
+
+  const scrollToNext = () => {
+    if (containerRef.current) {
+      const container = containerRef.current;
+      const scrollAmount = container.clientWidth;
+      container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  };
+
+  const scrollToPrev = () => {
+    if (containerRef.current) {
+      const container = containerRef.current;
+      const scrollAmount = container.clientWidth;
+      container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    }
+  };
+
   return (
     <div id="education">
-      <div class="education-section sec-padding">
-        <div class="heading">
+      <div className="education-section sec-padding">
+        <div className="heading">
           <h2>
             My<mark> Education</mark>{" "}
           </h2>
         </div>
         <div className="edu-prev-next-btn">
-          <button className="prev-btn" >
+          <button className="prev-btn" onClick={scrollToPrev}>
             <FaArrowLeft />
           </button>
-          <div className="next-btn">
+          <button className="next-btn" onClick={scrollToNext}>
             <FaArrowRight />
-          </div>
+          </button>
         </div>
-        <div class="educ-container" >
+        <div className="educ-container" ref={containerRef} style={{ overflowX: "hidden", display: "flex", scrollBehavior: "smooth" }}>
           <EducationBox
             eduLogo={
               "https://images.collegedunia.com/public/college_data/images/logos/1631612123Screenshot20210914145635.png"

@@ -9,14 +9,16 @@ import Experience from "./component/experience/Experience";
 import Education from "./component/Education/Education";
 import Contact from "./component/contact/contact";
 import Footer from "./component/footer/footer";
+import 'locomotive-scroll/dist/locomotive-scroll.css';
+import './component/locomotive/locomotive'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-scroll-container>
       <div className="main-container">
         <Navbar />
         <Home />
-        <div id="scrolling-container">
+        <div id="scrolling-container" data-scroll-container>
           <About />
           <Skills />
           <Project />

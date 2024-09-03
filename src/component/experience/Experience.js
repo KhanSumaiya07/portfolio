@@ -26,7 +26,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <div id="experience">
+    <div id="experience" data-scroll data-scroll-speed="0.5">
       <div className="experience-section sec-padding">
         <div className="heading">
           <h2>
@@ -37,7 +37,7 @@ const Experience = () => {
           <div className="left-content">
             <ExperienceBox
               expPara={
-                "Lorem ipsum dolor sit amet consectetur. Purus turpis odio dapibus tempor dolor. A commodo pellentesque eget vitae arcu massa vel facilisis tortor. Tincidunt ut fermentum facilisi sed penatibus imperdiet urna. Ligula amet purus risus et nunc sed."
+                "Currently working as a Front-End Developer, focusing on developing and optimizing web interfaces. Involved in building responsive designs, enhancing user experience, and implementing performance improvements."
               }
             />
             <JobInfoContainer
@@ -48,7 +48,7 @@ const Experience = () => {
             />
             <ExperienceBox
               expPara={
-                "Lorem ipsum dolor sit amet consectetur. Purus turpis odio dapibus tempor dolor. A commodo pellentesque eget vitae arcu massa vel facilisis tortor. Tincidunt ut fermentum facilisi sed penatibus imperdiet urna. Ligula amet purus risus et nunc sed."
+                "Completed a comprehensive training in front-end development, focusing on HTML, CSS, JavaScript, and web animations. Gained practical experience in building responsive web applications and enhancing UI/UX design skills."
               }
             />
           </div>
@@ -61,22 +61,23 @@ const Experience = () => {
             </div>
           </div>
           <div className="right-content">
+          <JobInfoContainer
+              profile={"Front-end Development"}
+              ComName={"Anncode Solution (Bhopal)"}
+              position={"Front-end developer"}
+              duration={"Aug 2024 - Present"}
+            />
+           
+            <ExperienceBox
+              expPara={
+                "Assisted in developing and designing the company's website, focusing on responsive design, UI improvements, and performance enhancements. Contributed to various front-end projects and learned practical skills in web development."
+              }
+            />
             <JobInfoContainer
               profile={"Front-end Development"}
               ComName={"Sheriyans Coding School"}
               position={"Training"}
               duration={"Aug 2023 - Jan 2024"}
-            />
-            <ExperienceBox
-              expPara={
-                "Lorem ipsum dolor sit amet consectetur. Purus turpis odio dapibus tempor dolor. A commodo pellentesque eget vitae arcu massa vel facilisis tortor. Tincidunt ut fermentum facilisi sed penatibus imperdiet urna. Ligula amet purus risus et nunc sed."
-              }
-            />
-            <JobInfoContainer
-              profile={"Front-end Development"}
-              ComName={"Anncode Solution (Bhopal)"}
-              position={"Front-end developer"}
-              duration={"Aug 2024 - Present"}
             />
           </div>
         </div>

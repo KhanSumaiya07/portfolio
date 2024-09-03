@@ -6,12 +6,12 @@ const Button = ({ text }) => {
         <div>
             {/* <button className='btn'>{text}</button> */}
 
-            <a href="#_" class="button">
+            <div class="button">
                 <span class="button-bg1"></span>
                 <span class="button-bg2"></span>
                 <span class="button-bg3"></span>
                 <span class="button-text">{text}</span>
-            </a>
+            </div>
 
         </div>
     )
