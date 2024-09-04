@@ -15,11 +15,11 @@
 
 [data-theme="light"]{
     --background-color: #ffffff; /* Light background */
-    --primary-color:#ffcc00 ; /* Primary color - similar to dark theme's secondary */
-    --secondary-color:#0c15c4 ; /* A bright, contrasting color */
+    --primary-color:#20AAE9; /* Primary color - similar to dark theme's secondary */
+    --secondary-color:#21aae9; /* A bright, contrasting color */
     --text-color: #333333; /* Dark text color for readability */
-    --border-color: rgba(0, 0, 0, 0.9); /* Light border with subtle opacity */
-    --box-color: #f2f2f2;
+    --border-color: #ccc; /* Light border with subtle opacity */
+    --box-color: #f3fbff;
 }
 
 .home-container{
@@ -401,7 +401,7 @@ p{
 .tech-stack span{
     font-size: 1rem;
     background: var(--box-color);
-    border: 1px solid #f2f2f21b;
+    border: 1px solid var(--border-color);
     border-radius: 30px;
     padding: 5px 10px;
 }
@@ -595,7 +595,7 @@ h6{
   .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid rgba(242, 242, 242, 0.3);
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     font-size: 16px;
     background-color: var(--box-color);
@@ -611,7 +611,7 @@ h6{
 
   /* Footer.css */
 .footer-container {
-    background: linear-gradient(to bottom, var(--secondary-color) 0%, rgba(0, 0, 0, 1)) 100%;
+    background: linear-gradient(to bottom, var(--secondary-color) 0%, var(--text-color) 100%);
     color: #EFE8E1;
     padding: 20px 0;
     font-size: 14px;
@@ -764,7 +764,7 @@ h6{
   
   .subheading span:last-child {
     font-size: 1.5rem;
-    color: white;
+    color: var(--text-color);
   }
 
 .about-content li{

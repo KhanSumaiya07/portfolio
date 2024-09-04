@@ -127,7 +127,7 @@ transition:all 0.3s ease;
   /* Responsive styles */
   @media (max-width: 900px) {
     .nav-wrapper{
-        background-color: #181818;
+        background-color: var(--background-color);
 
     }
     .button-display{
@@ -166,7 +166,7 @@ transition:all 0.3s ease;
         position: fixed;
         top: 9%;
         right: 0;
-        background-color: #181818; /* Black background */
+        background-color: var(--background-color); /* Black background */
         width: 100%; /* Adjust as needed */
         /* height: 100vh; */
         flex-direction: column;
