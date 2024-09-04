@@ -2,13 +2,13 @@
 .main-container{
   height: 100%;
   width: 100%;
-  background-color: #181818;
+  background-color: var(--background-color);
   position: relative;
   /* padding: 30px; */
 }
 #scrolling-container{
 position: relative;
-background-color: #181818;
+background-color: var(--background-color);
 z-index: 300;
 margin-top: 40rem;
 }

@@ -1,13 +1,19 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import "./navbar.css";
+import "../../component/style.css";
+
+
 import Button from "../button/button";
 import logo from "./logo.png"
+import { MdDarkMode } from "react-icons/md";
+import { CiLight } from "react-icons/ci";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
-
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark"); 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -28,6 +34,21 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+
+  const toggleTheme = () => { // 2. Theme toggle function
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme); // Save the selected theme to localStorage
+  };
+
+  useEffect(() => { // 3. Apply theme on mount
+    document.documentElement.setAttribute("data-theme", theme);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [theme]);
+
 
   return (
     <div className="nav-wrapper">
@@ -75,6 +96,9 @@ const Navbar = () => {
             </div>
           </li>
         </ul>
+      </div>
+      <div className="dark-light-theme" onClick={toggleTheme}>
+      {theme === "dark" ? <CiLight /> : <MdDarkMode />}
       </div>
       <div
         className={`hamburger-menu ${isMenuOpen ? "active" : ""}`}

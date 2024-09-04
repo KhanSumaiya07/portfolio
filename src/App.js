@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/dist/locomotive-scroll.css'; // Ensure Locomotive Scroll CSS is imported
+import 'locomotive-scroll/dist/locomotive-scroll.css'; 
 import Navbar from './component/navbar/navbar';
 import Home from './component/homepage/Home';
 import About from './component/about_me/about';
@@ -14,14 +14,22 @@ import './App.css'; // Your custom styles
 
 function App() {
   useEffect(() => {
-    // Initialize Locomotive Scroll
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: true, // Enables smooth scrolling
-    });
+    // Initialize Locomotive Scroll on window load to ensure all content is loaded
+    const onLoad = () => {
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true, // Enables smooth scrolling
+      });
 
-    // Cleanup on component unmount
-    return () => scroll.destroy();
+      // Cleanup on component unmount
+      return () => scroll.destroy();
+    };
+
+    window.addEventListener('load', onLoad);
+
+    return () => {
+      window.removeEventListener('load', onLoad);
+    };
   }, []);
 
   return (
