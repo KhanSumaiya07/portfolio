@@ -26,7 +26,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <div id="experience" data-scroll data-scroll-speed="0.5">
+    <div id="experience" data-scroll data-scroll-speed="2">
       <div className="experience-section sec-padding">
         <div className="heading">
           <h2>

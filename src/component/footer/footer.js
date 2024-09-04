@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
+    <footer className="footer-container" data-scroll data-scroll-speed="2">
       <div className="footer-content">
         <ul className="quick-links">
           <li><a href="#home">Home</a></li>

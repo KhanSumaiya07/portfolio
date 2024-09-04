@@ -3,7 +3,7 @@ import '../style.css'
 import Button from '../button/button'
 const Home = () => {
     return (
-        <div id='home'>
+        <div id='home' data-scroll data-scroll-speed="2">
             <div className='home-container'>
                 <div className='bg-hero-banner'>
                     <div className='bg-image-circle'>

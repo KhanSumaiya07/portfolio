@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
+import 'locomotive-scroll/dist/locomotive-scroll.css'; // Ensure CSS is imported
 
 const SmoothScrollComponent = () => {
   useEffect(() => {
+    // Initialize Locomotive Scroll
     const scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
       smooth: true, // Enables smooth scrolling
     });
 
-    return () => scroll.destroy(); // Cleanup on component unmount
+    // Cleanup on component unmount
+    return () => scroll.destroy();
   }, []);
 
   return (

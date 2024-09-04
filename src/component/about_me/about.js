@@ -11,7 +11,7 @@ const About = () => {
   };
 
   return (
-    <div id="about">
+    <div id="about" data-scroll data-scroll-speed="2">
       <div className="main-wrapper sec-padding">
         <div className="heading">
           <h2>

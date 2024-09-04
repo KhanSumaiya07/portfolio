@@ -108,7 +108,7 @@ const Navbar = () => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <Button text="Hire me" />
+        {/* <Button text="Hire me" /> */}
       </div>
     </div>
   );

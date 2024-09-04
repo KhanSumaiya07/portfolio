@@ -6,7 +6,7 @@ import projects from './anncodewebsite.png'
 const Project = () => {
     // var img = 'https://images.unsplash.com/photo-1617469955236-7f13d137a4f0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     return (
-        <div id='projects'>
+        <div id='projects' data-scroll data-scroll-speed="2">
             <div className='Project-section sec-padding'>
                 <div className='heading'>
                     <h2>My<mark> Projects</mark> </h2>

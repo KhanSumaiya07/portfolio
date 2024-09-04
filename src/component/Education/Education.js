@@ -9,6 +9,7 @@ const Education = () => {
     if (containerRef.current) {
       const container = containerRef.current;
       const scrollAmount = container.clientWidth;
+      console.log(container, scrollAmount);
       container.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
@@ -17,12 +18,13 @@ const Education = () => {
     if (containerRef.current) {
       const container = containerRef.current;
       const scrollAmount = container.clientWidth;
+      console.log(container, scrollAmount);
       container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     }
   };
 
   return (
-    <div id="education">
+    <div id="education" data-scroll data-scroll-speed="2">
       <div className="education-section sec-padding">
         <div className="heading">
           <h2>
