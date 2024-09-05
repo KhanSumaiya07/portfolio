@@ -5,7 +5,7 @@ import "../../component/style.css";
 
 
 import Button from "../button/button";
-import logo from "./logo.png"
+import logo from "./SK.png"
 import { MdDarkMode } from "react-icons/md";
 import { CiLight } from "react-icons/ci";
 
@@ -54,7 +54,8 @@ const Navbar = () => {
     <div className="nav-wrapper">
       <div className="logo">
         <a href="#home">
-          <img src={logo} alt="Logo" />
+          <span>SK</span>
+          {/* <img src={logo} alt="Logo" /> */}
         </a>
       </div>
       <div className="nav-content">

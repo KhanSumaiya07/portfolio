@@ -20,6 +20,15 @@ a {
 .nav-wrapper .logo{
   height: 50px;
   width: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-wrapper .logo span{
+  font-weight: 600;
+  color: var(--background-color);
 }
 .nav-wrapper .logo img{
   height: 100%;
@@ -117,11 +126,11 @@ transition:all 0.3s ease;
 }
 
 .nav-content ul li.active .border {
-    border-color: #ff0; /* Change border color to yellow */
+    border-color: var(--primary-color); /* Change border color to yellow */
 }
 
 .nav-content ul li.active .circles {
-    background: #ff0; /* Change circle color to yellow */
+    background: var(--primary-color); /* Change circle color to yellow */
 }
 
   /* Responsive styles */
