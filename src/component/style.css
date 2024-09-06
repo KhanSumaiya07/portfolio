@@ -783,4 +783,28 @@ h6{
     margin-bottom: 1rem;
     list-style: none;
 }
+
+/* Overall scrollbar */
+::-webkit-scrollbar {
+    width: 5px;   
+    height: 30px; 
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: var(--background-color);
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color); /* Gradient color */
+    border-radius: 10px;
+    height: 80px;
+  }
+  
+  
+ 
+  
+  
+
   
