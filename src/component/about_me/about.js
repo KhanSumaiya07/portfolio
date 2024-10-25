@@ -53,10 +53,6 @@ const About = () => {
                       school-level math quiz for outstanding performance.
                     </li>
                     <li>
-                      <strong>Kho-Kho Prize Winner:</strong> Led my team to
-                      victory in a Kho-Kho tournament, earning a team prize.
-                    </li>
-                    <li>
                       <strong>Best Student Recognition:</strong> Recognized as
                       the Best Student in college for exceptional technical
                       skills, academic excellence, and a calm, focused demeanor.
