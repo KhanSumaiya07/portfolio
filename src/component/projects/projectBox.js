@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectBox = ({ projImg, projName, projType, projPara, techStack =[] }) => {
+const ProjectBox = ({ projImg, projName, projType, projPara, techStack =[], projLink }) => {
   console.log(projImg);
   return (
     <div className="project-box">
@@ -25,6 +25,9 @@ const ProjectBox = ({ projImg, projName, projType, projPara, techStack =[] }) =>
         <div className="proj-para">
           <p>{projPara}</p>
         </div>
+        <button className="project_link_btn">
+          <a href={projLink} target="_blank">View Project</a>
+        </button>
       </div>
     </div>
   );
