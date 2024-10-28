@@ -3,6 +3,7 @@ import ProjectBox from './projectBox'
 import projectf from './ecommerceproject.png'
 import projects from './anncodewebsite.png'
 import eveonmoney from './eveonmoney.png'
+import disountly from './discountly.png'
 
 const Project = () => {
     // var img = 'https://images.unsplash.com/photo-1617469955236-7f13d137a4f0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -39,7 +40,7 @@ const Project = () => {
                     />
 
                     <ProjectBox
-                        projImg={eveonmoney}
+                        projImg={disountly}
                         projName={'Discountly website'}
                         projType={'Frontend Development'}
                         projPara={'Discountly is an e-commerce platform that offers various discounts and deals on products. I designed and developed the website, focusing on user experience and responsiveness.'}
