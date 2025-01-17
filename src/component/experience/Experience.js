@@ -35,16 +35,12 @@ const Experience = () => {
         </div>
         <div className="exp-container">
           <div className="left-content">
-            <ExperienceBox
-              expPara={
-                "Currently working as a Front-End Developer, focusing on developing and optimizing web interfaces. Involved in building responsive designs, enhancing user experience, and implementing performance improvements."
-              }
-            />
-            <JobInfoContainer
+            
+             <JobInfoContainer
               profile={"Front-end Development"}
               ComName={"Anncode Solution (Bhopal)"}
-              position={"Front-end developer Intern"}
-              duration={"Feb 2024 - July 2024"}
+              position={"Front-end developer"}
+              duration={"Aug 2024 - Present"}
             />
             <ExperienceBox
               expPara={
@@ -61,16 +57,9 @@ const Experience = () => {
             </div>
           </div>
           <div className="right-content">
-          <JobInfoContainer
-              profile={"Front-end Development"}
-              ComName={"Anncode Solution (Bhopal)"}
-              position={"Front-end developer"}
-              duration={"Aug 2024 - Present"}
-            />
-           
-            <ExperienceBox
+          <ExperienceBox
               expPara={
-                "Assisted in developing and designing the company's website, focusing on responsive design, UI improvements, and performance enhancements. Contributed to various front-end projects and learned practical skills in web development."
+                "Currently working as a Front-End Developer, focusing on developing and optimizing web interfaces. Involved in building responsive designs, enhancing user experience, and implementing performance improvements."
               }
             />
             <JobInfoContainer

@@ -37,29 +37,7 @@ const About = () => {
                 turning ideas into reality.
               </p>
 
-              {/* Achievements Section */}
-              <div className="section">
-                <div
-                  className="subheading"
-                  onClick={() => toggleSection("achievements")}
-                >
-                  <span>Key Achievements</span>
-                  <span>{openSection === "achievements" ? "-" : "+"}</span>
-                </div>
-                {openSection === "achievements" && (
-                  <ul>
-                    <li>
-                      <strong>Math Quiz Medalist:</strong> Awarded a medal in a
-                      school-level math quiz for outstanding performance.
-                    </li>
-                    <li>
-                      <strong>Best Student Recognition:</strong> Recognized as
-                      the Best Student in college for exceptional technical
-                      skills, academic excellence, and a calm, focused demeanor.
-                    </li>
-                  </ul>
-                )}
-              </div>
+            
 
               {/* Hobbies/Interests Section */}
               <div className="section">
@@ -72,7 +50,7 @@ const About = () => {
                 </div>
                 {openSection === "interests" && (
                   <p>
-                    Outside of work, I indulge in reading, gaming, and
+                    Outside of work, I love to read Books, Playing chess, and
                     journaling, which fuel my creativity and provide balance in
                     my professional life.
                   </p>
